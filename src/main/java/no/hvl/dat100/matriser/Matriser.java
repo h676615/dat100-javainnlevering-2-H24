@@ -67,7 +67,10 @@ public class Matriser {
 	
 	// e)
 	public static int[][] speile(int[][] matrise) {
-
+		if(matrise.length != matrise[0].length) {
+			return null;
+		}
+		
 		int[][] resultat = new int[matrise.length][matrise[0].length];
 		  
 		for (int i = 0; i < matrise.length; i++) {
