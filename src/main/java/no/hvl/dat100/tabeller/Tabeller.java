@@ -2,11 +2,14 @@ package no.hvl.dat100.tabeller;
 
 public class Tabeller {
 
-	// a)
+	
 	public static void skrivUt(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+		System.out.println("Index\tVerdi");
+		
+		for (int i = 0; i < tabell.length; i++) {
+			System.out.println(i + "\t" + tabell[i]);
+		}
+		
 
 	}
 
